@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FINANCIALFINITY</title>
+    <title>FINANCIAL FINITY</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link rel="icon" type="image/x-icon" href="/assets/img/1.png" />
     <!-- Styles -->
     <!-- Cool Google Fonts -->
     <link
@@ -69,7 +69,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg p-0">
           <a class="navbar-brand p-0 m-0" href="#"
-            >FINANCIAL <span>FINITY</span></a
+            >FINANCIAL<span>FINITY</span></a
           >
           <button
             class="navbar-toggler"
@@ -158,7 +158,9 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Mortgage Protection</a>
+                    <a class="dropdown-item text-dark" href="#"
+                      >Mortgage Protection</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item text-dark" href="#"
@@ -225,8 +227,37 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark fw-regular" href="#">About Us</a>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle text-dark fw-regular"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Merchant Services<img
+                    src="/assets/img/down-arrow.png"
+                    class="ms-2"
+                    alt="arrow"
+                /></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item text-dark" href="#"
+                      >Accept payments in-person online, or on-the-go</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" href="#"
+                      >Get the lowest processing rates with interchange
+                      optimization
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" href="#"
+                      >Integrate with existing platforms easily
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -245,7 +276,7 @@
             <h2>Your Partner In Financial Growth</h2>
             <p>A Simple Process For A Brighter Future</p>
             <a
-              href="#"
+              href="#contact"
               class="nav-link text-white fw-regular btn btn-success px-4 radius-10"
               >Appointment Now
             </a>
@@ -276,9 +307,9 @@
                 who will customize a quote for you and be there when you need
                 them
               </p>
-              <a href="#"
+              <!-- <a href="#"
                 >Learn More <img src="/assets/img/right-arrow.png" alt="Arrow"
-              /></a>
+              /></a> -->
             </div>
           </div>
           <div class="col-md-4">
@@ -290,9 +321,9 @@
                 your insurance needs. We hand select from the best companies to
                 find the right policies for you
               </p>
-              <a href="#"
+              <!-- <a href="#"
                 >Learn More <img src="/assets/img/right-arrow.png" alt="Arrow"
-              /></a>
+              /></a> -->
             </div>
           </div>
           <div class="col-md-4">
@@ -303,9 +334,9 @@
                 You do you when you knowing you have the right coverage at the
                 right pride
               </p>
-              <a href="#"
+              <!-- <a href="#"
                 >Learn More <img src="/assets/img/right-arrow.png" alt="Arrow"
-              /></a>
+              /></a> -->
             </div>
           </div>
         </div>
@@ -374,11 +405,11 @@
 
             <div class="portfolio-wrapper">
               <img src="/assets/img/pilot1.avif" alt="Portfolio 3" />
-              <h4>We are your Co-Pilot</h4>
+              <h4>Your partner in accelerating opportunity</h4>
               <p>
-                We provide the best office support so you can focus on what you
-                do best: Building your relationship with your clients and
-                growing your business.
+                FinancialFinity helps ambitious Sales Agents and ISOs archive
+                their next possibility. Grow portfolio with a range of powerful
+                and patented solution, and agent-centric tool
               </p>
             </div>
 
@@ -487,7 +518,7 @@
     <!-- Testimonials End -->
     <!-- Newsletter Start -->
 
-    <div class="subscribe">
+    <div class="subscribe" id="contact">
       <div class="container content_container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-5 text-center">
@@ -508,29 +539,57 @@
               ></div>
               <div class="input-group col item">
                 <i class="fas fa-user"></i>
-                <input type="text" id="fName" required />
-                <label for="fname">Full Name</label>
+                <input
+                  placeholder="Full Name"
+                  type="text"
+                  id="fName"
+                  required
+                />
+                <label for="fname"></label>
               </div>
               <div class="input-group">
-                <i class="fas fa-user"></i>
-                <input type="text" id="lBecome" required />
-                <label for="lName">Want to became Agency? (Yes/NO)</label>
-              </div>
-              <div class="input-group">
-                <i class="fas fa-user"></i>
-                <input type="text" id="lFind" required />
-                <label for="lName">Want to find Agency? (Yes/NO)</label>
+                <i class="fa-solid fa-phone-volume"></i>
+                <input
+                  placeholder="Phone Number"
+                  type="text"
+                  id="phoneNumber"
+                  required
+                />
+                <label for="rPassword"></label>
               </div>
               <div class="input-group">
                 <i class="fas fa-envelope"></i>
-                <input type="text" id="rEmail" required />
-                <label for="rEmail">Email</label>
+                <input placeholder="Email" type="text" id="rEmail" required />
+                <label for="rEmail"></label>
               </div>
-              <div class="input-group">
-                <i class="fas fa-lock"></i>
-                <input type="password" id="phoneNumber" required />
-                <label for="rPassword">Phone Number</label>
+
+              <div class="input-group1">
+                <i class="fa-solid fa-award"></i>
+                <label class="inputlabel" for="lBecome">
+                  Want to Became Agency</label
+                >
+                <input class="checkbox" type="checkbox" id="lBecome" required />
               </div>
+              <div class="input-group1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <label class="inputlabel" for="lFind"
+                  >Want to Find Agency</label
+                >
+                <input class="checkbox" type="checkbox" id="lFind" required />
+              </div>
+              <div class="input-group1">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <label class="inputlabel" for="merchant"
+                  >Interest in Merchant Service</label
+                >
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  id="lMerchant"
+                  required
+                />
+              </div>
+
               <button class="btn_form" id="submitSignUp">
                 Appointment Now
               </button>
@@ -547,15 +606,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5">
-            <h2><a href="/">WEB LOGO</a></h2>
-            <p>BE YOUR OWN BOSS - DO'NT BE SOME ONE ELSE</p>
+            <p>BE YOUR OWN BOSS</p>
             <ul class="nav social-icons">
               <li>
-                <a href="https://facebook.com" target="_blank"
+                <a
+                  href="https://www.facebook.com/annieannie180295"
+                  target="_blank"
                   ><i class="bi bi-facebook"></i
                 ></a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="https://twitter.com" target="_blank"
                   ><i class="bi bi-twitter"></i
                 ></a>
@@ -569,7 +629,7 @@
                 <a href="https://instagram.com" target="_blank"
                   ><i class="bi bi-instagram"></i
                 ></a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="col-md-4">
@@ -577,15 +637,30 @@
             <ul class="nav footer-menu flex-column">
               <li><a href="#what-we-do">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a
+                  href="mailto:financialfinity@gmail.com
+                "
+                >
+                  financialfinity@gmail.com
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone-volume"></i>
+                <a href="tel:+7203418077"> 720 341 8077</a>
+              </li>
             </ul>
           </div>
           <div class="col-md-3">
             <h3>Address</h3>
-            <p>60 Park Ave, Newark, NJ 07104<br />United Stage</p>
+            <a
+              style="color: black; font-size: 500; font-weight: 500"
+              href="https://www.google.com/maps/place/3535+N+Coolidge+Ct,+Aurora,+CO+80019,+USA/@39.7659044,-104.7124099,17z/data=!3m1!4b1!4m6!3m5!1s0x876c6128c20ccc01:0xa3a272b4fe2edca0!8m2!3d39.7659003!4d-104.709835!16s%2Fg%2F11sb04wf69?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+              >3535 N Coolidge Ct , CO 80019</a
+            >
           </div>
-          <div class="col-md-12">
+          <div style="font-size: large; font-weight: 600" class="col-md-12">
             <p class="copyright">Copyright &copy; FINANCIALFINITY 2024</p>
           </div>
         </div>

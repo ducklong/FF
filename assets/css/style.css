@@ -11,7 +11,8 @@ img {
 /* Header CSS Start */
 
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem #20b15a6b;
+  box-shadow: 0 0 0 0.25rem #cd7b166b;
+  background-color: rgb(187, 243, 245);
 }
 
 .navbar-toggler-icon {
@@ -23,11 +24,13 @@ img {
   padding: 0;
   border-radius: 0;
   border: 0;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .dropdown-item:active,
 .dropdown-item:hover {
-  background-color: #20b15a;
+  background-color: #0be96b;
   transition: all 1s;
 }
 
@@ -38,6 +41,8 @@ img {
   padding: 15px 20px;
   color: black;
   border-bottom: 2px solid #e5e5e5;
+  background: #a8edf6;
+  text-wrap: wrap;
 }
 
 li:last-child .dropdown-item {
@@ -88,8 +93,8 @@ header .navbar-expand-lg .navbar-nav {
 }
 
 .btn-success {
-  border-color: #20b15a;
-  background-color: #20b15a;
+  border-color: #15f41d;
+  background-color: #09b66b;
 }
 
 header.fixed-top {
@@ -101,6 +106,7 @@ header.fixed-top {
 /* Hero Banner Start */
 
 .hero-banner {
+  margin-top: 15px;
   background-color: #e9f4fa;
   padding: 120px 0 35px;
 }
@@ -157,7 +163,7 @@ header.fixed-top {
 }
 
 .what-we-do .boxes-wrapper {
-  padding: 50px 50px 50px 50px;
+  padding: 50px 50px 60px 50px;
   border-radius: 30px;
   transition: all 0.35s linear;
   background-color: white;
@@ -258,11 +264,17 @@ header.fixed-top {
 .portfolio h2.main-heading {
   margin-bottom: 75px;
 }
+.multitude {
+  margin-bottom: 100px;
+}
 
 .portfolio .portfolio-wrapper {
   display: inline-block;
   width: 100%;
   break-inside: avoid;
+}
+.portfolio-wrapper {
+  margin-bottom: 35px;
 }
 
 .portfolio.portfolio-wrapper:nth-child(odd) {
@@ -270,7 +282,7 @@ header.fixed-top {
 }
 
 .portfolio .portfolio-wrapper img {
-  margin-bottom: 42px;
+  margin-bottom: 12px;
   width: 100%;
 }
 
@@ -785,8 +797,7 @@ div#subscribe-response-message {
 /* Media Queries End*/
 
 .signAuth {
-  display: flex;
-  background: #fff;
+  background: #ecf9f9;
   max-width: 450px;
   padding: 1.5rem;
   margin: 15px auto;
@@ -811,6 +822,7 @@ input {
   font-size: 15px;
 }
 .input-group {
+  display: flex;
   padding: 1% 0;
   position: relative;
 }
@@ -828,7 +840,6 @@ input::placeholder {
 }
 label {
   color: #757575;
-  position: relative;
   left: 1.2em;
   top: -1.3em;
   cursor: auto;
@@ -854,6 +865,7 @@ input:not(:placeholder-shown) ~ label {
   text-decoration: underline;
 }
 button {
+  margin-top: 10px;
   font-size: 1.1rem;
   padding: 8px 0;
   border-radius: 5px;
@@ -921,4 +933,25 @@ button:hover {
   font-size: 1rem;
   opacity: 0;
   animation: fadeOut 7s forwards;
+}
+
+.input-group1 {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group1 .checkbox {
+  width: 30px;
+}
+
+.inputlabel {
+  font-size: 15px;
+  margin-left: 10px;
+  color: black;
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
 }

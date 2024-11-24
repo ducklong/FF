@@ -40,21 +40,34 @@ signUp.addEventListener("click", (event) => {
   const email = document.getElementById("rEmail").value;
   const phoneNumber = document.getElementById("phoneNumber").value;
   const fullName = document.getElementById("fName").value;
-  const findAgengy = document.getElementById("lFind").value;
-  const becomeAgengy = document.getElementById("lBecome").value;
+
+  const findAgency = document.getElementById("lFind");
+
+  const becomeAgency = document.getElementById("lBecome");
+  const merchant = document.getElementById("lMerchant");
+
   const auth = getAuth();
   const db = getFirestore();
 
-  createUserWithEmailAndPassword(auth, email, phoneNumber)
+  createUserWithEmailAndPassword(
+    auth,
+    email,
+    phoneNumber,
+    becomeAgency,
+    findAgency
+  )
     .then((userCredential) => {
       const user = userCredential.user;
       const userData = {
         email: email,
         fullName: fullName,
-        findAgengy: findAgengy,
-        becomeAgengy: becomeAgengy,
+        findAgency: findAgency.checked,
+        becomeAgency: becomeAgency.checked,
         phoneNumber: phoneNumber,
+        merchant: merchant.checked,
+        createDate: new Date(),
       };
+      console.log(userData);
       showMessage("Thanks, We'll contact you ASAP", "signUpMessage");
       const docRef = doc(db, "users", user.uid);
       setDoc(docRef, userData)
@@ -67,6 +80,7 @@ signUp.addEventListener("click", (event) => {
     })
     .catch((error) => {
       const errorCode = error.code;
+      console.log(error);
       if (errorCode == "auth/email-already-in-use") {
         showMessage("Email Address Already Exists !!!", "signUpMessage");
       } else {
