@@ -303,8 +303,25 @@ header.fixed-top {
   margin: 0;
   padding-right: 27px;
 }
+.portfolio-wrapper-clarity h4 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
 
-/* Portfolio End */
+.portfolio-wrapper-clarity p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding-right: 27px;
+}
+.portfolio-wrapper-clarity img {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
 /* Testimonials Start */
 
 .testimonials {
