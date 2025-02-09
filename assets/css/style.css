@@ -273,10 +273,13 @@ header.fixed-top {
   width: 100%;
   break-inside: avoid;
 }
+
 .portfolio-wrapper {
   margin-bottom: 35px;
 }
-
+.portfolio-wrapper-clarity {
+  margin-top: 35px;
+}
 .portfolio.portfolio-wrapper:nth-child(odd) {
   margin: 0 0 6em;
 }
